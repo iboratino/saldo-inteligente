@@ -1,0 +1,5 @@
+﻿--Script ef database update
+dotnet ef --startup-project ..\SaldoInteligente.API\SaldoInteligente.API.csproj --project .\SaldoInteligente.Infrastructure.csproj database update
+
+-- Add migration
+dotnet ef --startup-project ..\SaldoInteligente.API\SaldoInteligente.API.csproj --project .\SaldoInteligente.Infrastructure.csproj migrations add <name migration>

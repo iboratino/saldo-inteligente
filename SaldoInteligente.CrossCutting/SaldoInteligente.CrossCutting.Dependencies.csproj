@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaldoInteligente.Domain\SaldoInteligente.Domain.csproj" />
+    <ProjectReference Include="..\SaldoInteligente.Infrastructure\SaldoInteligente.Infrastructure.csproj" />
+    <ProjectReference Include="..\SaldoInteligente.Services\SaldoInteligente.Services.csproj" />
+  </ItemGroup>
+
+</Project>
