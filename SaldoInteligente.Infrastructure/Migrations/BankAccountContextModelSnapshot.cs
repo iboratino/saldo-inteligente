@@ -46,10 +46,10 @@ namespace SaldoInteligente.Infrastructure.Migrations
                         .HasColumnType("bit")
                         .HasDefaultValue(1ul);
 
-                    b.Property<int>("Status")
+                    b.Property<sbyte>("Status")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("tinyint")
-                        .HasDefaultValue(1);
+                        .HasDefaultValue((sbyte)1);
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");

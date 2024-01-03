@@ -29,7 +29,7 @@ namespace SaldoInteligente.Services.Service
         {
             var entity = mapper.Map<BalanceCheckingStatementEntity>(dto);
 
-            entity.LooseEntry = true;
+            entity.LooseEntry = false;
             entity.CreatedAt = DateTime.UtcNow;
 
             var inserted = statementRepository.Insert(entity);
@@ -41,7 +41,7 @@ namespace SaldoInteligente.Services.Service
         {
             var entity = mapper.Map<BalanceCheckingStatementEntity>(dto);
 
-            entity.LooseEntry = false;
+            entity.LooseEntry = true;
             entity.CreatedAt = DateTime.UtcNow;
 
             var inserted = statementRepository.Insert(entity);

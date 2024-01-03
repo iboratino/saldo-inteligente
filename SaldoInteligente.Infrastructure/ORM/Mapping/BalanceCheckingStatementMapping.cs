@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SaldoInteligente.Domain.Entities;
 using SaldoInteligente.Domain.Enum;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace SaldoInteligente.Infrastructure.ORM.Mapping
 {
@@ -27,7 +28,10 @@ namespace SaldoInteligente.Infrastructure.ORM.Mapping
             builder.Property(x => x.LooseEntry)
                 .HasColumnType("bit")
                 .HasDefaultValue(1)
-                .IsRequired();
+                .IsRequired()
+                .HasConversion<int>(
+                   v => v ? 0 : 1,
+                   v => v == 0);
 
             builder.Property(x => x.Status)
                 .HasColumnType("tinyint")

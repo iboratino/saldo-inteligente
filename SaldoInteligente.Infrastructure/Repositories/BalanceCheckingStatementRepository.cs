@@ -16,7 +16,7 @@ namespace SaldoInteligente.Infrastructure.Repositories
         }
 
         public List<BalanceCheckingStatementEntity> FindRangeDate(FindRangeDateDTO dto)
-        {            
+        {
             IQueryable<BalanceCheckingStatementEntity> query = _context.BalanceCheckingStatement;
             if (dto?.InitialDate == DateTime.MinValue && dto?.FinalDate == DateTime.MinValue)
             {
@@ -28,7 +28,7 @@ namespace SaldoInteligente.Infrastructure.Repositories
             }
             else if (dto?.InitialDate != DateTime.MinValue && dto?.FinalDate != DateTime.MinValue)
             {
-                query = query.Where(s => s.InputDate >= dto.InitialDate && s.InputDate <= dto.FinalDate);
+                query = query.Where(s => s.InputDate >= dto.InitialDate.Date && s.InputDate <= dto.FinalDate.Date.AddDays(1).AddTicks(-1));
             }
             else if (dto?.InitialDate != DateTime.MinValue)
             {

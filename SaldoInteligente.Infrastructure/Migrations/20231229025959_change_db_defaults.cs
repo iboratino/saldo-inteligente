@@ -18,14 +18,15 @@ namespace SaldoInteligente.Infrastructure.Migrations
                 oldClrType: typeof(sbyte),
                 oldType: "tinyint");
 
-            migrationBuilder.AlterColumn<ulong>(
+            migrationBuilder.AlterColumn<bool>(
                 name: "LooseEntry",
                 table: "bank_balance_checking_statement",
                 type: "bit",
                 nullable: false,
-                defaultValue: 1ul,
-                oldClrType: typeof(ulong),
-                oldType: "bit");
+                defaultValue: true,
+                oldClrType: typeof(bool),
+                oldType: "bit",
+                oldDefaultValue: 1ul);
 
             migrationBuilder.AlterColumn<DateTime>(
                 name: "InputDate",
