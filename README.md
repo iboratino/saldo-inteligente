@@ -27,6 +27,11 @@ Feito isso, coloque o backend para rodar com o seguinte comando
 
 Pronto, espero que tudo tenha dado certo ;>
 
+## Rode o teste de api
+
+Para gerar dados para a visualização, você pode rodar o teste de api, ele ira gerar alguns dados no banco de dados. 
+
+Para isso, basta apenas, no console entrar no diretório dos teste de api `./SaldoInteligente.ApiTest`, e rodar o comando `dotnet test`.
 
 ## Instruções para inicializar o frontend
 
@@ -44,3 +49,10 @@ Tento feito isso, basta apenas executar o projeto.
 
 `http://localhost:4200`
 
+## Considerações
+
+Gostaria de ter concluido todo o teste que me propuz a fazer, porém não consegui concluir o mesmo, por falta de tempo, está uma verdadeira loucura, estou fazendo varios testes ao mesmo tempo, e alguns freelances, mas gostaria que olhasse a estrutura e o codigo com carinho, para ver o pontencial.
+
+Eu sou uma pessoa que consigo lidar com desde a comcepção do UI/UX, como implementar no front, tanto web como mobile, consigo analisar e levantar requisitos de sistemas, e implementa-los, desde a criação e modelagem do banco de dados, mesmo com SQL puro, como faze todo o backend, inclusive com interação entre eles com gRCP, isso utilizando algumas arquiteturas conhecidas, e padrões.
+
+E estamos numa situação tão dificil no pais, que nem tenho cobrado um salário alto, tenho buscado mais estabilidade do que altos rendimentos no momento, por conta da minha família.
